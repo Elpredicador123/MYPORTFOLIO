@@ -118,7 +118,7 @@
     background: black;
 }
 .principal__cabeza__titulo{
-    font-size: 2.5em;
+    font-size: 2em;
     text-align: center;
     color: white;
 }
@@ -189,7 +189,7 @@
 }
 .principal__cabecera__imagenes__titulo{
     padding: 0.5em;
-    width: 50%;
+    min-width: 50%;
     border: 1px solid red;
     text-align: center;
     font-size: 2em;
@@ -198,11 +198,11 @@
 }
 .principal__cabecera__imagenes__descripcion{
     padding: 0.5em;
-    width: 50%;
+    min-width: 50%;
     border: 1px solid red;
     text-align: center;
     font-weight: bolder;
-    color: wheat;
+    color: wheat    ;
 }
 .principal__imagenes{
     min-height: 80vh;
@@ -261,7 +261,7 @@
         display: grid;
         gap: .5em;
         grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(5,300px); 
+        grid-template-rows: repeat(3,300px); 
     }
   }
   /* CELULAR */
@@ -276,7 +276,7 @@
         display: grid;
         gap: .5em;
         grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(9,300px); 
+        grid-template-rows: repeat(6,300px); 
     }
     .cabecera__navegacion{
         border: 1px solid red;
