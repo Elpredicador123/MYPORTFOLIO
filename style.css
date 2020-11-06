@@ -268,7 +268,7 @@
         left: -100vw;
         width: 50vw;
         top: 100%;
-        height: calc(100vh - (3em + 20px));
+        height: calc(100vh - (4em + 20px));
         border: 1px solid red;
         list-style: none;
         display: flex;
