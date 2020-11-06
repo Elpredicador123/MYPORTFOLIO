@@ -16,7 +16,6 @@
 .cabecera__navegacion{
     border: 1px solid red;
     padding: 1em 2em;
-    /* margin: 2em 0; */
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -41,16 +40,25 @@
     width: 500px;
     flex-wrap: wrap;
 }
+.cabecera__navegacion__lista a{
+    text-decoration: none;
+    color: white;
+}
 .item{
     border: 1px solid red;
     padding: .5em 1.5em;
     background: silver;
+    border-radius: 1em;
 }
 .cabecera__contenedor{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
     border: 1px solid red;
-    margin: 5em 0;
+    flex-wrap: wrap-reverse;
+}
+.propietario{
+    margin-top: 10em;
 }
 .cabecera__contenedor__foto{
     width: 12.5em;
@@ -61,21 +69,40 @@
     border-radius: 50%;
     border: 1px solid red;
 }
-.cabecera__nombrepropietario{
-    font-size: 1.5em;
-    padding: 0.5em 1.5em;
+.cabecera__contenedor__propietario{
+    min-width: 320px;
     border: 1px solid red;
+    margin: 1em 0;
     color: white;
-    border-radius: 2em;
+}
+.hola{
+    font-size: 2em;
+    font-weight: 600;
+    margin: .5em 0;
+    border: 1px solid red;
+}
+.nombre{
+    font-size: 3em;
+    font-weight: bold;
+    margin: .5em 0;
+    border: 1px solid red;
+}
+.soy{
+    font-size: 1.25em;
+    font-weight: bold;
+    margin: .5em 0;
+    border: 1px solid red;
 }
 .ultimo{
     margin-top: 10em;
 }
 .cabecera__contenedor__bajando{
     border: 1px solid red;
-    color: black;
+    color: white;
     padding: 1em 3em;
-    border-radius: 2px;
+    border-radius: 3px;
+    text-decoration: underline;
+    background: black;
 }
 .principal{
     min-height: 100vh;
@@ -92,6 +119,7 @@
 }
 .principal__cabeza__titulo{
     font-size: 2.5em;
+    text-align: center;
     color: white;
 }
 .principal__cuerpo{
@@ -116,7 +144,9 @@
     padding: 0.5em;
     font-size: 1.5em;
     font-weight: bold;
-    text-decoration: underline;
+    width: 75%;
+    margin: 0 auto;
+    border-bottom: 5px solid purple;
     display: flex;
     justify-content: center;
 }
@@ -129,10 +159,14 @@
     border: 1px solid red;
     height: 75px;
     width: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .principal__cuerpo__informacion__texto{
     border: 1px solid red;
     padding: 1em;
+    min-height: 110px;
 }
 .principal__cuerpo__infomacion__lista{
     border: 1px solid red;
@@ -149,7 +183,7 @@
     padding: 2em;
     border: 1px solid red;
     display: grid;
-    gap: .5em;
+    gap: 1em;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3,1fr);
     
@@ -162,6 +196,35 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+.footer{
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    align-items: center;
+    background: black;
+    color: white;
+    border: 1px solid red;
+    flex-wrap: wrap;
+}
+.footer__redes{
+    min-width: 25%;
+    margin: 1em auto;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red;
+}
+.footer__derechos{
+    margin: 0 auto;
+    padding: 1em 2em;
+    text-align: center;
+    border: 1px solid red;
+    font-size: 0.9em;
+}
+.footer__redes__icono{
+    padding: 1em 2em;
+    border: 1px solid red;
 }
 /* TABLET */
 @media (max-width: 768px) {
@@ -221,6 +284,10 @@
         width: 150px;
     }
     .activar__lista:checked ~ .cabecera__navegacion .cabecera__navegacion__lista{
-        left: -2px;
+        left: 0;
+    }
+    .propietario{
+        margin-top: 2em;
+        padding: 0 2em;
     }
   }
