@@ -276,14 +276,6 @@
     background: rgba(13,146, 252,.5)
     /* border: 1px solid red; */
 }
-@keyframes links{
-    0%{
-
-    }
-    100%{
-
-    }
-}
 /*------------------------- TABLET --------------------------- */
 @media (max-width: 768px) {
     .principal__imagenes{
