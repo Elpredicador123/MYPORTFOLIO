@@ -161,7 +161,7 @@
     font-weight: bold;
     width: 75%;
     margin: 0 auto;
-    border-bottom: 5px solid purple;
+    border-bottom: 5px solid rgba(255, 170, 0, 0.75);
     display: flex;
     justify-content: center;
 }
@@ -218,7 +218,7 @@
     /* border: 1px solid red; */
     text-align: center;
     font-weight: bolder;
-    color: wheat    ;
+    color: wheat;
 }
 .principal__imagenes{
     min-height: 80vh;
