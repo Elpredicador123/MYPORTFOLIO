@@ -290,7 +290,6 @@
     background: rgb(75, 75, 218);
 }
 .footer__redes__icono:hover{
-    background: rgba(13,146, 252,.5);
     transform: scale(1.2);
     /* border: 1px solid red; */
 }
