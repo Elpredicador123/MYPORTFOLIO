@@ -51,6 +51,7 @@
     padding: .5em 1.5em;
     background: #FFAA01;
     border-radius: 1em;
+    transition: .5s;
 }
 .item:hover{
     background:rgba(13, 146, 252, .5);
@@ -79,7 +80,9 @@
     min-width: 320px;
     /* border: 1px solid red; */
     margin: 1em 0;
+    padding: 0 1em;
     color: white;
+    background: rgba(0, 0, 0, 0.25);
 }
 .hola{
     font-size: 2em;
@@ -237,6 +240,11 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
+    transition: .25s;
+    background: rgba(0, 0, 0, 0.1);
+}
+.principal__imagenes__imagen:hover{
+    transform: scale(.9);
 }
 /*------------------------- PIE DE PAGINA --------------------------- */
 .footer{
@@ -270,10 +278,12 @@
     background: #0D92FC;
     cursor: pointer;
     margin: 0 .5em;
+    transition: .25s;
     /* border: 1px solid red; */
 }
 .footer__redes__icono:hover{
-    background: rgba(13,146, 252,.5)
+    background: rgba(13,146, 252,.5);
+    transform: scale(1.2);
     /* border: 1px solid red; */
 }
 /*------------------------- TABLET --------------------------- */
@@ -325,7 +335,7 @@
         align-items: center;
         background: white;
         flex-direction: column;
-        transition: 1s;
+        transition: .5s;
     }
     .cabecera__navegacion__boton{
         /* border: 1px solid red; */
@@ -336,7 +346,7 @@
     }
     .activar__lista:checked ~ .cabecera__navegacion .cabecera__navegacion__lista{
         left: 0;
-        transition: 2s;
+        transition: 1s;
     }
     .propietario{
         margin-top: 2em;
