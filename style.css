@@ -14,6 +14,7 @@
     margin: 0 auto;
     padding: 2em 0;
 }
+/*------------------------- NAVEGACION --------------------------- */
 .cabecera__navegacion{
     /* border: 1px solid red; */
     padding: 1em 2em;
@@ -48,9 +49,13 @@
 .item{
     /* border: 1px solid red; */
     padding: .5em 1.5em;
-    background: silver;
+    background: #FFAA01;
     border-radius: 1em;
 }
+.item:hover{
+    background:rgba(13, 146, 252, .5);
+}
+/*------------------------- INFORMACION --------------------------- */
 .cabecera__contenedor{
     display: flex;
     justify-content: space-around;
@@ -105,6 +110,7 @@
     text-decoration: underline;
     background: black;
 }
+/*------------------------- CONOCIMIENTOS --------------------------- */
 .principal{
     min-height: 100vh;
     background: silver;
@@ -117,6 +123,7 @@
     justify-content: center;
     align-items: center;
     background: black;
+    border-bottom: 2.5px solid  rgba(255, 170, 0, 0.75);
 }
 .principal__cabeza__titulo{
     font-size: 2em;
@@ -182,6 +189,7 @@
 .informacion__lista__item{
     margin: 1em 0;
 }
+/*------------------------- TRABAJOS --------------------------- */
 .principal__cabecera__imagenes{
     min-height: 20vh;
     display: flex;
@@ -229,6 +237,7 @@
     height: 100%;
     object-fit: contain;
 }
+/*------------------------- PIE DE PAGINA --------------------------- */
 .footer{
     min-height: 10vh;
     display: flex;
@@ -255,10 +264,26 @@
     font-size: 0.9em;
 }
 .footer__redes__icono{
-    padding: 1em 2em;
+    padding: 1.5em;
+    border-radius: 50%;
+    background: #0D92FC;
+    cursor: pointer;
+    margin: 0 .5em;
     /* border: 1px solid red; */
 }
-/* TABLET */
+.footer__redes__icono:hover{
+    background: rgba(13,146, 252,.5)
+    /* border: 1px solid red; */
+}
+@keyframes links{
+    0%{
+
+    }
+    100%{
+
+    }
+}
+/*------------------------- TABLET --------------------------- */
 @media (max-width: 768px) {
     .principal__imagenes{
         min-height: 100vh;
@@ -270,7 +295,7 @@
         grid-template-rows: repeat(3,300px); 
     }
   }
-  /* CELULAR */
+/*------------------------- CELULAR --------------------------- */
 @media (max-width: 425px) {
     .cabecera{
         padding-top:0.25em;
@@ -307,6 +332,7 @@
         align-items: center;
         background: white;
         flex-direction: column;
+        transition: 1s;
     }
     .cabecera__navegacion__boton{
         /* border: 1px solid red; */
@@ -317,6 +343,7 @@
     }
     .activar__lista:checked ~ .cabecera__navegacion .cabecera__navegacion__lista{
         left: 0;
+        transition: 2s;
     }
     .propietario{
         margin-top: 2em;
