@@ -8,7 +8,7 @@
     <title>PORTFOLIO</title>
 </head>
 <body>
-    <header class="cabecera">
+    <header class="cabecera" id="sobre_mi">
         <input class="activar__lista" type="checkbox" name="" id="lista">
         <nav class="cabecera__navegacion">
             <h2 class="cabecera__navegacion__imagen">
@@ -18,10 +18,9 @@
                 <label for="lista"><i class="fas fa-th-list"></i></label>
             </div>
             <ul class="cabecera__navegacion__lista">
-                <a href=""><li class="item">Enlace 1</li></a>
-                <a href=""><li class="item">Enlace 2</li></a>
-                <a href=""><li class="item">Enlace 3</li></a>
-                <a href=""><li class="item">Enlace 4</li></a>
+                <a href="#sobre_mi"><li class="item">Sobre mi</li></a>
+                <a href="#conocimientos"><li class="item">Conocimientos</li></a>
+                <a href="#trabajos"><li class="item">Trabajos</li></a>
             </ul>
         </nav>
         <section class="cabecera__contenedor propietario">
@@ -40,7 +39,7 @@
                 </p>
                 
             </div>
-            <img class="cabecera__contenedor__foto"
+            <img class="cabecera__contenedor__foto foto"
                 src="https://1.bp.blogspot.com/-79DdxzZkDog/T76QV6v5IuI/AAAAAAAAAEY/6DzpGZzsmfA/s320/homerocatolico_456_336.jpg"
                 alt="imagen_propietario"
                 >
@@ -50,7 +49,7 @@
         </div>
     </header>
     <main>
-        <section class="principal">
+        <section class="principal" id="conocimientos">
             <header class="principal__cabeza">
                 <h3 class="principal__cabeza__titulo">Mis Conocimientos</h3>
             </header>
@@ -120,7 +119,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="trabajos">
             <header class="principal__cabecera__imagenes">
                 <div class="principal__cabecera__imagenes__titulo">
                     Mis pequeños trabajos
