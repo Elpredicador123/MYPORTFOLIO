@@ -26,11 +26,11 @@
     background: black;
 }
 .cabecera__navegacion__imagen{
-    /* border: 1px solid red; */
+    border: 1px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 150px;
+    width: 170px;
 }
 .cabecera__navegacion__boton{
     display: none;
@@ -345,6 +345,7 @@
     .cabecera__navegacion{
         /* border: 1px solid red; */
         /* margin: 2em 0; */
+        margin-top: -4px;
         padding: 1em 0;
         display: flex;
         justify-content: space-evenly;
