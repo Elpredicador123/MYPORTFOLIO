@@ -69,12 +69,13 @@
     margin-top: 10em;
 }
 .cabecera__contenedor__foto{
-    width: 12.5em;
-    height: 12.5em;
+    width: 15em;
+    height: 15em;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    border: 8px solid rgba(248, 181, 57, 0.75);
     /* border: 1px solid red; */
 }
 .cabecera__contenedor__propietario{
@@ -113,7 +114,7 @@
     border-radius: 3px;
     text-decoration: underline;
     background: black;
-    border: 1px solid wheat;
+    border: 1px solid rgb(241, 159, 5);
     animation: 1.5s bajando infinite;
 }
 
@@ -352,7 +353,7 @@
     .cabecera__navegacion__lista{
         position: absolute;
         left: -100vw;
-        width: 50vw;
+        width: 100vw;
         top: 100%;
         height: calc(100vh - (4em + 20px));
         /* border: 1px solid red; */
@@ -362,6 +363,7 @@
         background: white;
         flex-direction: column;
         transition: .5s;
+        background-image: linear-gradient(to bottom , #001A49 , #0022A4);
     }
     .cabecera__navegacion__boton{
         /* border: 1px solid red; */
