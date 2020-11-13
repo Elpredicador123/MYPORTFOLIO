@@ -3,6 +3,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+:root{
+    --letras:white;
+    --borde-fondo: #FFAA01;
+    --fondo-oscuro: black;
+}
 scroll-container {
     display: block;
     width: 100%;
@@ -24,12 +29,18 @@ scroll-container {
 }
 .cabecera__navegacion{
     /* border: 1px solid red; */
+    position: fixed;
+    left: 0;
+    width:98.25%;
+    z-index: 3;
     padding: 1em 2em;
+    margin-top: -2em;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    color: white;
-    background: black;
+    color: var(--letras);
+    background: var(--fondo-oscuro);
+    border-bottom: 2px solid var(--borde-fondo);
 }
 .cabecera__navegacion__imagen{
     /* border: 1px solid red; */
@@ -52,15 +63,12 @@ scroll-container {
 }
 .cabecera__navegacion__lista a{
     text-decoration: none;
-    color: white;
-}
-nav a.selected{
-    background: rgba(13, 146, 252, .5);
+    color: var(--letras);
 }
 .item{
     /* border: 1px solid red; */
     padding: .5em 1.5em;
-    background: #FFAA01;
+    background: var(--borde-fondo);
     border-radius: 1em;
     transition: .5s;
 }
@@ -85,7 +93,7 @@ nav a.selected{
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    border: 8px solid rgba(248, 181, 57, 0.75);
+    border: 8px solid var(--borde-fondo);
     /* border: 1px solid red; */
 }
 .cabecera__contenedor__propietario{
@@ -93,7 +101,7 @@ nav a.selected{
     /* border: 1px solid red; */
     margin: 1em 0;
     padding: 0 1em;
-    color: white;
+    color: var(--letras);
     background: rgba(0, 0, 0, 0.25);
 }
 .hola{
@@ -119,12 +127,12 @@ nav a.selected{
 }
 .cabecera__contenedor__bajando{
     /* border: 1px solid red; */
-    color: white;
+    color: var(--letras);
     padding: 1em 3em;
     border-radius: 3px;
     text-decoration: underline;
-    background: black;
-    border: 1px solid rgb(241, 159, 5);
+    background: var(--fondo-oscuro);
+    border: 1px solid var(--borde-fondo);
     animation: 1.5s bajando infinite;
 }
 
@@ -148,13 +156,13 @@ nav a.selected{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: black;
-    border-bottom: 2.5px solid  rgba(255, 170, 0, 0.75);
+    background: var(--fondo-oscuro);
+    border-bottom: 2.5px solid var(--borde-fondo);
 }
 .principal__cabeza__titulo{
     font-size: 2em;
     text-align: center;
-    color: white;
+    color: var(--letras);
 }
 .principal__cuerpo{
     min-height: 75vh;
@@ -187,7 +195,7 @@ nav a.selected{
     font-weight: bold;
     width: 75%;
     margin: 0 auto;
-    border-bottom: 5px solid rgba(255, 170, 0, 0.75);
+    border-bottom: 5px solid var(--borde-fondo);
     display: flex;
     justify-content: center;
 }
@@ -231,16 +239,16 @@ nav a.selected{
     align-items: center;
     justify-content: center;
     /* border: 1px solid red; */
-    background: black;
+    background: var(--fondo-oscuro);
 }
 .principal__cabecera__imagenes__titulo{
-    padding: 0.5em;
+    padding-top: 1em;
     min-width: 50%;
     /* border: 1px solid red; */
     text-align: center;
     font-size: 2em;
     font-weight: bolder;
-    color: white;
+    color: var(--letras);
 }
 .principal__cabecera__imagenes__descripcion{
     padding: 0.5em;
@@ -283,8 +291,8 @@ nav a.selected{
     justify-content: space-between;
     padding: 1em;
     align-items: center;
-    background: black;
-    color: white;
+    background: var(--fondo-oscuro);
+    color: var(--letras);
     /* border: 1px solid red; */
     flex-wrap: wrap;
 }
@@ -303,11 +311,17 @@ nav a.selected{
     font-size: 0.9em;
 }
 .footer__redes__icono{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
     padding: 1.5em;
     border-radius: 50%;
     cursor: pointer;
     margin: 0 .5em;
     transition: .25s;
+    color: white;
+    border: 1px solid silver;
     /* border: 1px solid red; */
 }
 .footer__redes__icono:nth-child(1){
@@ -360,11 +374,12 @@ nav a.selected{
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
-        color: white;
-        background: black;
+        color: var(--letras);
+        background: var(--fondo-oscuro);
         position: fixed;
         width: 100vw;
         z-index: 1;
+        border: none;
     }
     .cabecera__navegacion__lista{
         position: absolute;
@@ -391,9 +406,6 @@ nav a.selected{
     .activar__lista:checked ~ .cabecera__navegacion .cabecera__navegacion__lista{
         left: 0;
         transition: 1s;
-    }
-    nav a.selected{
-        /* background: rgba(13, 146, 252, .5); */
     }
     .propietario{
         margin-top: 2em;
