@@ -8,143 +8,146 @@
     <title>PORTFOLIO</title>
 </head>
 <body>
-    <header class="cabecera" id="sobre_mi">
-        <input class="activar__lista" type="checkbox" name="" id="lista">
-        <nav class="cabecera__navegacion">
-            <h2 class="cabecera__navegacion__imagen">
-                My Portfolio
-            </h2>
-            <div class="cabecera__navegacion__boton">
-                <label for="lista"><i class="fas fa-th-list"></i></label>
-            </div>
-            <ul class="cabecera__navegacion__lista">
-                <a href="#sobre_mi"><li class="item">Sobre mi</li></a>
-                <a href="#conocimientos"><li class="item">Conocimientos</li></a>
-                <a href="#trabajos"><li class="item">Trabajos</li></a>
-            </ul>
-        </nav>
-        <section class="cabecera__contenedor propietario">
-            <div class="cabecera__contenedor__propietario">
-                <div class="hola">
-                    Hola, Yo soy
+    <scroll-container>
+        <header class="cabecera" id="sobre_mi">
+            <input class="activar__lista" type="checkbox" name="" id="lista">
+            <nav class="cabecera__navegacion">
+                <h2 class="cabecera__navegacion__imagen">
+                    My Portfolio
+                </h2>
+                <div class="cabecera__navegacion__boton">
+                    <label for="lista"><i class="fas fa-th-list"></i></label>
                 </div>
-                <h1 class="nombre">
-                    Saavedra Neira Jerson Jesus.
-                </h1>
-                <p class="soy">
-                    Soy aprendis de Front End. <br>
-                    Soy estudiante de la UNT 6to ciclo. <br>
-                    Tengo 18 años. <br>
-                    Correo: agentepredicador@gmail.com
-                </p>
-                
-            </div>
-            <img class="cabecera__contenedor__foto foto"
-                src="https://1.bp.blogspot.com/-79DdxzZkDog/T76QV6v5IuI/AAAAAAAAAEY/6DzpGZzsmfA/s320/homerocatolico_456_336.jpg"
-                alt="imagen_propietario"
-                >
-        </section>
-        <div class="cabecera__contenedor ultimo">
-            <a class="cabecera__contenedor__bajando" href=""><i class="fas fa-angle-double-down"></i> Sigue bajando</a>
-        </div>
-    </header>
-    <main>
-        <section class="principal" id="conocimientos">
-            <header class="principal__cabeza">
-                <h3 class="principal__cabeza__titulo">Mis Conocimientos</h3>
-            </header>
-            <div class="principal__cuerpo">
-                <div class="principal__cuerpo__informacion">
-                    <div class="principal__cuerpo__informacion__titulo">
-                        Front End
+                <ul class="cabecera__navegacion__lista">
+                    <li><a onclick="selectMenuOption(this)" class="menu-option item selected" href="#sobre_mi">Sobre mi</a></li>
+                    <li><a onclick="selectMenuOption(this)" class="menu-option item" href="#conocimientos">Conocimientos</a></li>
+                    <li><a onclick="selectMenuOption(this)" class="menu-option item" href="#trabajos">Trabajos</a></li>
+                </ul>
+            </nav>
+            <section class="cabecera__contenedor propietario">
+                <div class="cabecera__contenedor__propietario">
+                    <div class="hola">
+                        Hola, Yo soy
                     </div>
-                    <div class="principal__cuerpo__informacion__contenedorimagen">
-                        <div class="principal__cuerpo__informacion__imagen">
-                            <i class="fas fa-code fa-3x"></i>
+                    <h1 class="nombre">
+                        Saavedra Neira Jerson Jesus.
+                    </h1>
+                    <p class="soy">
+                        Soy aprendis de Front End. <br>
+                        Soy estudiante de la UNT 6to ciclo. <br>
+                        Tengo 18 años. <br>
+                        Correo: agentepredicador@gmail.com
+                    </p>
+                    
+                </div>
+                <img class="cabecera__contenedor__foto foto"
+                    src="https://1.bp.blogspot.com/-79DdxzZkDog/T76QV6v5IuI/AAAAAAAAAEY/6DzpGZzsmfA/s320/homerocatolico_456_336.jpg"
+                    alt="imagen_propietario"
+                    >
+            </section>
+            <div class="cabecera__contenedor ultimo">
+                <a class="cabecera__contenedor__bajando" href=""><i class="fas fa-angle-double-down"></i> Sigue bajando</a>
+            </div>
+        </header>
+        <main>
+            <section class="principal" id="conocimientos">
+                <header class="principal__cabeza">
+                    <h3 class="principal__cabeza__titulo">Mis Conocimientos</h3>
+                </header>
+                <div class="principal__cuerpo">
+                    <div class="principal__cuerpo__informacion">
+                        <div class="principal__cuerpo__informacion__titulo">
+                            Front End
+                        </div>
+                        <div class="principal__cuerpo__informacion__contenedorimagen">
+                            <div class="principal__cuerpo__informacion__imagen">
+                                <i class="fas fa-code fa-3x"></i>
+                            </div>
+                        </div>
+                        <div class="principal__cuerpo__informacion__texto">
+                            El Front end sirve para que un usuario pueda entrar a una web cualquiera, diseñado para ser fácilmente utilizable y también muy atractivo.
+                        </div>
+                        <div class="principal__cuerpo__infomacion__lista">
+                            <ul class="informacion__lista">
+                                <li class="informacion__lista__item"><i class="fas fa-check-circle"></i> HTML</li>
+                                <li class="informacion__lista__item"><i class="fas fa-check-circle"></i> CSS</li>
+                                <li class="informacion__lista__item"><i class="fas fa-check-circle"></i> JavaScript</li>
+                                <li class="informacion__lista__item"><i class="fas fa-check-circle"></i> Bootstrap</li>
+                                <li class="informacion__lista__item"><i class="fas fa-check-circle"></i> Angular</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="principal__cuerpo__informacion__texto">
-                        El Front end sirve para que un usuario pueda entrar a una web cualquiera, diseñado para ser fácilmente utilizable y también muy atractivo.
-                    </div>
-                    <div class="principal__cuerpo__infomacion__lista">
-                        <ul class="informacion__lista">
-                            <li class="informacion__lista__item"><i class="fas fa-check-circle"></i> HTML</li>
-                            <li class="informacion__lista__item"><i class="fas fa-check-circle"></i> CSS</li>
-                            <li class="informacion__lista__item"><i class="fas fa-check-circle"></i> JavaScript</li>
-                            <li class="informacion__lista__item"><i class="fas fa-check-circle"></i> Bootstrap</li>
-                            <li class="informacion__lista__item"><i class="fas fa-check-circle"></i> Angular</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="principal__cuerpo__informacion">
-                    <div class="principal__cuerpo__informacion__titulo">
-                        Back End
-                    </div>
-                    <div class="principal__cuerpo__informacion__contenedorimagen">
-                        <div class="principal__cuerpo__informacion__imagen">
-                            <i class="fas fa-database fa-3x"></i>
+                    <div class="principal__cuerpo__informacion">
+                        <div class="principal__cuerpo__informacion__titulo">
+                            Back End
+                        </div>
+                        <div class="principal__cuerpo__informacion__contenedorimagen">
+                            <div class="principal__cuerpo__informacion__imagen">
+                                <i class="fas fa-database fa-3x"></i>
+                            </div>
+                        </div>
+                        <div class="principal__cuerpo__informacion__texto">
+                            Parte encargada de que toda la lógica de una página funcione, son conjunto de acciones que pasan dentro del sistema, pero que no podemos ver.
+                        </div>
+                        <div class="principal__cuerpo__infomacion__lista">
+                            <ul class="informacion__lista">
+                                <li class="informacion__lista__item"><i class="fas fa-check-circle"></i> PHP</li>
+                                <li class="informacion__lista__item"><i class="fas fa-check-circle"></i> Python</li>
+                                <li class="informacion__lista__item"><i class="fas fa-check-circle"></i> MySQL</li>
+                                <li class="informacion__lista__item"><i class="fas fa-check-circle"></i> Laravel</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="principal__cuerpo__informacion__texto">
-                        Parte encargada de que toda la lógica de una página funcione, son conjunto de acciones que pasan dentro del sistema, pero que no podemos ver.
-                    </div>
-                    <div class="principal__cuerpo__infomacion__lista">
-                        <ul class="informacion__lista">
-                            <li class="informacion__lista__item"><i class="fas fa-check-circle"></i> PHP</li>
-                            <li class="informacion__lista__item"><i class="fas fa-check-circle"></i> Python</li>
-                            <li class="informacion__lista__item"><i class="fas fa-check-circle"></i> MySQL</li>
-                            <li class="informacion__lista__item"><i class="fas fa-check-circle"></i> Laravel</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="principal__cuerpo__informacion">
-                    <div class="principal__cuerpo__informacion__titulo">
-                        Otros
-                    </div>
-                    <div class="principal__cuerpo__informacion__contenedorimagen">
-                        <div class="principal__cuerpo__informacion__imagen">
-                            <i class="fas fa-database fa-3x"></i>
+                    <div class="principal__cuerpo__informacion">
+                        <div class="principal__cuerpo__informacion__titulo">
+                            Otros
+                        </div>
+                        <div class="principal__cuerpo__informacion__contenedorimagen">
+                            <div class="principal__cuerpo__informacion__imagen">
+                                <i class="fas fa-database fa-3x"></i>
+                            </div>
+                        </div>
+                        <div class="principal__cuerpo__informacion__texto">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod quisquam labore inventore consectetur debitis eum 
+                        </div>
+                        <div class="principal__cuerpo__infomacion__lista">
+                            <ul class="informacion__lista">
+                                <li class="informacion__lista__item"><i class="fas fa-check-circle"></i> 1</li>
+                                <li class="informacion__lista__item"><i class="fas fa-check-circle"></i> 2</li>
+                                <li class="informacion__lista__item"><i class="fas fa-check-circle"></i> 3</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="principal__cuerpo__informacion__texto">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod quisquam labore inventore consectetur debitis eum 
+                </div>
+            </section>
+            <section id="trabajos">
+                <header class="principal__cabecera__imagenes">
+                    <div class="principal__cabecera__imagenes__titulo">
+                        Mis pequeños trabajos
                     </div>
-                    <div class="principal__cuerpo__infomacion__lista">
-                        <ul class="informacion__lista">
-                            <li class="informacion__lista__item"><i class="fas fa-check-circle"></i> 1</li>
-                            <li class="informacion__lista__item"><i class="fas fa-check-circle"></i> 2</li>
-                            <li class="informacion__lista__item"><i class="fas fa-check-circle"></i> 3</li>
-                        </ul>
+                    <div class="principal__cabecera__imagenes__descripcion">
+                        Presentacion de mis pequeñas pruebas hechas durante la universidad para ustedes.
                     </div>
+                </header>
+                <div class="principal__imagenes">
+                    <a href="https://agentepredicador.000webhostapp.com/PUERTOESCONDIDO/" target="_blank"><img class="principal__imagenes__imagen" src="img/trabajo1.JPG" alt="PUERTOESCONDIDO"></a>
+                    <a href="https://agentepredicador.000webhostapp.com/Promociones/" target="_blank"><img class="principal__imagenes__imagen" src="img/trabajo2.JPG" alt="Promociones comida"></a>
+                    <a href="https://agentepredicador.000webhostapp.com/oficina_ultima/" target="_blank"><img class="principal__imagenes__imagen" src="img/trabajo3.JPG" alt="oficina"></a>
+                    <a href="https://agentepredicador.000webhostapp.com/Login/" target="_blank"><img class="principal__imagenes__imagen" src="img/trabajo4.JPG" alt="Login"></a>
+                    <a href="https://agentepredicador.000webhostapp.com/FUTBOL/index.html" target="_blank"><img class="principal__imagenes__imagen" src="img/trabajo5.JPG" alt="FUTBOL"></a>
+                    <a href="#" ><img class="principal__imagenes__imagen" src="https://i.pinimg.com/originals/98/b3/71/98b371cd43ead599d22bb40590df8287.jpg" alt="trabajo"></a>
                 </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__redes">
+                <i class="fab fa-facebook footer__redes__icono"></i>
+                <i class="fab fa-youtube footer__redes__icono"></i>
+                <i class="fab fa-linkedin footer__redes__icono"></i>
             </div>
-        </section>
-        <section id="trabajos">
-            <header class="principal__cabecera__imagenes">
-                <div class="principal__cabecera__imagenes__titulo">
-                    Mis pequeños trabajos
-                </div>
-                <div class="principal__cabecera__imagenes__descripcion">
-                    Presentacion de mis pequeñas pruebas hechas durante la universidad para ustedes.
-                </div>
-            </header>
-            <div class="principal__imagenes">
-                <a href="https://agentepredicador.000webhostapp.com/PUERTOESCONDIDO/" target="_blank"><img class="principal__imagenes__imagen" src="img/trabajo1.JPG" alt="PUERTOESCONDIDO"></a>
-                <a href="https://agentepredicador.000webhostapp.com/Promociones/" target="_blank"><img class="principal__imagenes__imagen" src="img/trabajo2.JPG" alt="Promociones comida"></a>
-                <a href="https://agentepredicador.000webhostapp.com/oficina_ultima/" target="_blank"><img class="principal__imagenes__imagen" src="img/trabajo3.JPG" alt="oficina"></a>
-                <a href="https://agentepredicador.000webhostapp.com/Login/" target="_blank"><img class="principal__imagenes__imagen" src="img/trabajo4.JPG" alt="Login"></a>
-                <a href="https://agentepredicador.000webhostapp.com/FUTBOL/index.html" target="_blank"><img class="principal__imagenes__imagen" src="img/trabajo5.JPG" alt="FUTBOL"></a>
-                <a href="#" ><img class="principal__imagenes__imagen" src="https://i.pinimg.com/originals/98/b3/71/98b371cd43ead599d22bb40590df8287.jpg" alt="trabajo"></a>
-            </div>
-        </section>
-    </main>
-    <footer class="footer">
-        <div class="footer__redes">
-            <i class="fab fa-facebook footer__redes__icono"></i>
-            <i class="fab fa-youtube footer__redes__icono"></i>
-            <i class="fab fa-linkedin footer__redes__icono"></i>
-        </div>
-        <h3 class="footer__derechos">Copyright&copy; 2020 - Página creada por Saavedra Neira Jerson Jesus - Todos los derechos reservados</h3>
-    </footer>
+            <h3 class="footer__derechos">Copyright&copy; 2020 - Página creada por Saavedra Neira Jerson Jesus - Todos los derechos reservados</h3>
+        </footer>
+    </scroll-container>
+    <script src="script.js"></script>
 </body>
 </html>
