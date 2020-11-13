@@ -10,7 +10,7 @@
 }
 scroll-container {
     display: block;
-    width: 100%;
+    width: 100vw;
     height:100vh;
     overflow-y: scroll;
     scroll-behavior: smooth;
@@ -31,7 +31,7 @@ scroll-container {
     /* border: 1px solid red; */
     position: fixed;
     left: 0;
-    width:98.25%;
+    width:100%;
     z-index: 3;
     padding: 1em 2em;
     margin-top: -2em;
@@ -114,6 +114,7 @@ scroll-container {
     font-size: 3.25em;
     font-weight: bold;
     margin: .5em 0;
+    color: var(--borde-fondo);
     /* border: 1px solid red; */
 }
 .soy{
@@ -325,16 +326,16 @@ scroll-container {
     /* border: 1px solid red; */
 }
 .footer__redes__icono:nth-child(1){
-    background: #0D92FC;
+    background: #3b5998;
 }
 .footer__redes__icono:nth-child(2){
-    background: red;
+    background:  #00acee;
 }
 .footer__redes__icono:nth-child(3){
-    background: rgb(75, 75, 218);
+    background: #0072b1;
 }
 .footer__redes__icono:hover{
-    transform: scale(1.2);
+    transform: scale(1.3);
     /* border: 1px solid red; */
 }
 /*------------------------- TABLET --------------------------- */
