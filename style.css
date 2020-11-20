@@ -8,13 +8,6 @@
     --borde-fondo: #FFAA01;
     --fondo-oscuro: black;
 }
-scroll-container {
-    display: block;
-    width: 100vw;
-    height:100vh;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-  }
 .cabecera{
     min-height: 100vh;
     /* border: 1px solid red; */
